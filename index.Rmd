@@ -33,5 +33,7 @@ ggplot(plants, aes(conservation.status, fill = region)) +
 
 ggplot(plants, aes(conservation.status, fill = region)) +
   geom_bar() + 
-  facet_grid(~reproduction)
+  facet_grid(~reproduction) +
+  labs(x = "plant species provenance", y = "frequency", fill = "sets of sites") +
+  scale_fill_brewer(palette = "Greens")
 ```
